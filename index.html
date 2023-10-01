@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Website - 1 Porject</title>
+    <title>Blog Website - 1 Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@401&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
-
     <script>
         tailwind.config = {
           theme: {
@@ -18,41 +17,65 @@
                 colorC: '#52796F',
                 colorD: '#84A98C',
                 colorE: '#CAD2C5',
-              }
-            }
-          }
+                colorF: '#000000',
+              }             
+            }            
+          }          
         }
-      </script>
-      <style>
-        .font-lato {
-    font-family: 'Lato', sans-serif;
+        module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        'Satoshi': ['sans-serif',] // 'Poppins' should match the font name
+      },
+    },
+  },
+  variants: {},
+  plugins: [],
 }
 
-      </style>
+    </script>
+    
 </head>
 <body>
-    <header class="text-white">
 
-      <div class="flex h-full w-full relative z-4">
-                <img src="assets/bg-image.png" alt="" class="absolute object-cover ">    
-              </div>
-    
-    
-      
-<nav class="relative mx-auto flex justify-between items-center py-6 px-16">
-                <img src="assets/logo.svg" alt="">
-            <ul class="flex space-x-6 text-white-800 font-lato font-medium">
-                <li><a href="#" class="hover:text-gray-400">Home</a></li>
-                <li><a href="#" class="hover:text-gray-400">Articles</a></li>
-                <li><a href="#" class="hover:text-gray-400">News</a></li>
-                <li><a href="#" class="hover:text-gray-400">Plans</a></li>
-                <li><a href="#" class="hover:text-gray-400">Travel</a></li>
-                <li><a href="#" class="hover:text-gray-400">About</a></li>
-                <li><a href="#" class="hover:text-gray-400">Contact</a></li>
-            </ul> 
+
+  <!-- Header having Navbar -->
+
+  <!-- <img src="../assets/bg-image.jpg" alt="" class="absolute"> -->
+
+   <header class="relative " style="background-image: url('./assets/bg-image.jpg'); ">
+        <nav class="relative mx-auto flex justify-between items-center py-6 px-16">
+          <div>
+            <img src="assets/logo.svg" alt="">
+            </div>
+
+            <div class="flex space-x-6 text-white font-lato font-medium">
+                <a href="#" class="">Home</a>
+                <a href="#" class="">Articles</a>
+                <a href="#" class="">News</a>
+                <a href="#" class="">Plans</a>
+                <a href="#" class="">Travel</a>
+                <a href="#" class="">About</a>
+                <a href="#" class="">Contact</a>
+            </div>
         </nav>
 
-        </header>
+        <!-- Navbar End -->
+
+        <div class="text-center flex-column justify-center space-y-4">
+          <h3 class="text-white opacity-50 text-center">OUR BLOG WEBSITE</h3>
+          <div class="items-center justify-center flex">
+          <p class="w-80 h-0.5 bg-[#52796F]"></p>
+        </div>
+          <h1 class="text-center font-Satoshi text-white font-semibold text-[40px]">A versatile suggests your blog offers valuable insights and readers</h1>
+          <div class="items-center justify-center flex">
+          <div class="items-center text-center justify-center flex text-white font-semibold rounded-[4px] px-10 py-[20px] bg-colorC"><a href="#">Read More</a></div>
+        </div>
+        </div>
+      </header>
+
+      <!-- End of Header -->
 
 </body>
 </html>
