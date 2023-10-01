@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Website - 1 Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@401&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap" rel="stylesheet">
     
     <style>
@@ -59,7 +58,10 @@
       <!-- Main Section Start -->
 
       <main class="bg-[#CAD2C5]">
-        <section class="latest-posts py-20"> 
+        
+        <!-- Lastest Post Section (1) -->
+
+        <section class="py-20"> 
           <h1 class="text-center text-4xl font-bold  font-Satoshi"><span class="underline text-[#52796F]">Latest</span> Posts</h1>
 
 
@@ -126,17 +128,56 @@
         </div>
           </div>            
           </div>
-
-
-
         </div>
-
         </section>
 
-        <section>
-        </section>
+        <!-- Popular Categories Section (2) -->
 
+        <section class="py-20">
+
+          <h1 class="text-center text-4xl font-bold  font-Satoshi"><span class="underline text-[#52796F]">Popular</span> Categories</h1>
+
+          <!-- 3 Boxes -->
+
+          <div class="flex flex-row flex-wrap gap-16 items-center justify-center pt-20 ">
+            
+            <!-- Box 1 -->
+
+            <div class="hover:shadow-lg hover:scale-105 transform transition-transform duration-300 ease-in-out cursor-pointer rounded-[10px] box1 w-[300px] h-[450px]" style="background-image: url('./assets/imgA.png');">
+             
+              <h1 class="pl-4 pt-[400px] flex text-white font-semibold text-2xl">Design</h1>
+            </div>
+          
+
+          <!-- Box 2 -->
+
+          <div class="hover:shadow-lg hover:scale-105 transform transition-transform duration-300 ease-in-out cursor-pointer rounded-[10px] box2 w-[300px] h-[450px]" style="background-image: url('./assets/imgB.png');">
+             
+            <h1 class="pl-4 pt-[400px] flex text-white font-semibold text-2xl">Advertising</h1>
+          </div>
+
+        <!-- Box 3 -->
+
+        <div class="hover:shadow-lg hover:scale-105 transform transition-transform duration-300 ease-in-out cursor-pointer rounded-[10px] box3 w-[300px] h-[450px]" style="background-image: url('./assets/imgC.png');">
+             
+          <h1 class="pl-4 pt-[400px] flex text-white font-semibold text-2xl">Photography</h1>
+        </div>
+      </div>
+
+      <!-- Button -->
+
+      <div class="items-center justify-center flex pt-32">
+        <div class="cursor-pointer hover:shadow-lg hover:scale-105 transform transition-transform duration-300 ease-in-out items-center text-center justify-center flex text-white text-[18px] font-medium rounded-[4px] px-16 py-[18px] bg-[#52796F]"><a href="#">Explore More</a></div>
+      </div>
+        </section>
       </main>
+
+      <footer class="h-20 bg-black p-8 pl-20">
+        <div class="flex items-left justify-start gap-32 "> 
+          <img class="h-6" src="assets/logo.svg" alt="">
+          <p class="text-white font-regular opacity-70">All rights reserved and belongs to this blog author (c) Zaid Hussain UI/UX Designer</p>
+        </div>
+      </footer>
 
 </body>
 </html>
