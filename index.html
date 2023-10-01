@@ -6,7 +6,8 @@
     <title>Blog Website - 1 Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@401&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap" rel="stylesheet">
+
     <script>
         tailwind.config = {
           theme: {
@@ -22,19 +23,16 @@
             }            
           }          
         }
-        module.exports = {
-  theme: {
-    extend: {
-      fontFamily: {
-        'Satoshi': ['sans-serif',] // 'Poppins' should match the font name
-      },
-    },
-  },
-  variants: {},
-  plugins: [],
-}
 
     </script>
+    <style>
+      * {
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+
+}
+
+    </style>
     
 </head>
 <body>
@@ -42,9 +40,7 @@
 
   <!-- Header having Navbar -->
 
-  <!-- <img src="../assets/bg-image.jpg" alt="" class="absolute"> -->
-
-   <header class="relative " style="background-image: url('./assets/bg-image.jpg'); ">
+     <header class="relative" style="background-image: url('./assets/bg-image1.jpg'); ">
         <nav class="relative mx-auto flex justify-between items-center py-6 px-16">
           <div>
             <img src="assets/logo.svg" alt="">
@@ -63,19 +59,32 @@
 
         <!-- Navbar End -->
 
-        <div class="text-center flex-column justify-center space-y-4">
-          <h3 class="text-white opacity-50 text-center">OUR BLOG WEBSITE</h3>
+        <div class="text-center flex-column justify-center space-y-8 py-32 px-auto">
+          <h3 class="text-white opacity-50 text-center  font-Satoshi">OUR BLOG WEBSITE</h3>
           <div class="items-center justify-center flex">
           <p class="w-80 h-0.5 bg-[#52796F]"></p>
         </div>
-          <h1 class="text-center font-Satoshi text-white font-semibold text-[40px]">A versatile suggests your blog offers valuable insights and readers</h1>
-          <div class="items-center justify-center flex">
-          <div class="items-center text-center justify-center flex text-white font-semibold rounded-[4px] px-10 py-[20px] bg-colorC"><a href="#">Read More</a></div>
+          <h1 class="text-center font-Satoshi text-white font-semibold text-6xl leading-tight tracking-wide">A versatile suggests your blog offers <br> valuable insights and readers</h1>
+          <div class="items-center justify-center flex pt-6">
+          <div class="items-center text-center justify-center flex text-white text-[18px] font-medium rounded-[4px] px-10 py-[18px] bg-colorC hover:bg-colorB transition duration-300 ease-in-out"><a href="#">Read More</a></div>
         </div>
         </div>
       </header>
 
       <!-- End of Header -->
+
+      <!-- Main Section Start -->
+
+      <main class="bg-colorE">
+        <section class="latest-posts py-20"> 
+          <h1 class="text-center text-3xl font-bold  font-Satoshi"><span class="underline text-colorC">Latest</span> Posts</h1>
+
+        </section>
+
+        <section>
+        </section>
+
+      </main>
 
 </body>
 </html>
