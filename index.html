@@ -7,24 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@401&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap" rel="stylesheet">
-
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                colorA: '#2F3E46',
-                colorB: '#354F52',
-                colorC: '#52796F',
-                colorD: '#84A98C',
-                colorE: '#CAD2C5',
-                colorF: '#000000',
-              }             
-            }            
-          }          
-        }
-
-    </script>
+    
     <style>
       * {
     box-sizing: border-box;
@@ -41,7 +24,7 @@
   <!-- Header having Navbar -->
 
      <header class="relative" style="background-image: url('./assets/bg-image1.jpg'); ">
-        <nav class="relative mx-auto flex justify-between items-center py-6 px-16">
+        <nav class=" relative mx-auto flex justify-between items-center py-6 px-16">
           <div>
             <img src="assets/logo.svg" alt="">
             </div>
@@ -66,7 +49,7 @@
         </div>
           <h1 class="text-center font-Satoshi text-white font-semibold text-6xl leading-tight tracking-wide">A versatile suggests your blog offers <br> valuable insights and readers</h1>
           <div class="items-center justify-center flex pt-6">
-          <div class="items-center text-center justify-center flex text-white text-[18px] font-medium rounded-[4px] px-10 py-[18px] bg-colorC hover:bg-colorB transition duration-300 ease-in-out"><a href="#">Read More</a></div>
+          <div class="cursor-pointer hover:shadow-lg hover:scale-105 transform transition-transform duration-300 ease-in-out items-center text-center justify-center flex text-white text-[18px] font-medium rounded-[4px] px-10 py-[18px] bg-[#52796F]"><a href="#">Read More</a></div>
         </div>
         </div>
       </header>
@@ -75,9 +58,78 @@
 
       <!-- Main Section Start -->
 
-      <main class="bg-colorE">
+      <main class="bg-[#CAD2C5]">
         <section class="latest-posts py-20"> 
-          <h1 class="text-center text-3xl font-bold  font-Satoshi"><span class="underline text-colorC">Latest</span> Posts</h1>
+          <h1 class="text-center text-4xl font-bold  font-Satoshi"><span class="underline text-[#52796F]">Latest</span> Posts</h1>
+
+
+          <!-- 3 Boxes -->
+          
+          <div class="flex flex-row flex-wrap gap-12 items-center justify-center pt-20">
+            
+            <!-- Box 1 -->
+
+          <div class="cursor-pointer space-y-4 bg-white flex-column pb-4 rounded-[10px] hover:shadow-lg hover:scale-105 transform transition-transform duration-300 ease-in-out">
+            <img src="./assets/img1.png" class=" w-80 h-auto rounded-tr-[10px] rounded-tl-[10px]">
+            <div class="my-4 mx-4 h-6 w-20 bg-[#E8572A] rounded-xl items-center justify-center">
+            <p class="font-regular text-[14px] text-center text-white ">Laptops</p>
+          </div>
+          
+          <h1 class="mx-4 font-bold text-xl ">Best Laptops Under 50k</h1>
+          <p class="text-[12px] font-medium opacity-70 w-72 mx-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+
+          <div class="mx-4 flex-row flex items-center justify-start">
+            <img src="./assets/pfp.png" class="w-12">
+            <div class="pl-3">
+          <h4 class="font-medium text-sm">Jack Williamson</h4>
+          <p class="text-[12px] font-regular">CEO of Stech</p>
+        </div>
+          </div>            
+          </div>
+          
+          <!-- Box 2 -->
+
+          <div class="cursor-pointer space-y-4 bg-white flex-column pb-4 rounded-[10px] hover:shadow-lg hover:scale-105 transform transition-transform duration-300 ease-in-out">
+            <img src="./assets/img2.png" class=" w-80 h-auto rounded-tr-[10px] rounded-tl-[10px]">
+            <div class="my-4 mx-4 h-6 w-20 bg-[#0FA8FF] rounded-xl items-center justify-center">
+            <p class="font-regular text-[14px] text-center text-white ">AI & ML</p>
+          </div>
+          
+          <h1 class="mx-4 font-bold text-xl ">Machine Learning Evolution</h1>
+          <p class="text-[12px] font-medium opacity-70 w-72 mx-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+
+          <div class="mx-4 flex-row flex items-center justify-start">
+            <img src="./assets/pfp.png" class="w-12">
+            <div class="pl-3">
+          <h4 class="font-medium text-sm">Jack Williamson</h4>
+          <p class="text-[12px] font-regular">CEO of Stech</p>
+        </div>
+          </div>            
+          </div>
+
+          <!-- Box 3 -->
+
+          <div class="cursor-pointer space-y-4 bg-white flex-column pb-4 rounded-[10px] hover:shadow-lg hover:scale-105 transform transition-transform duration-300 ease-in-out">
+            <img src="./assets/img3.png" class=" w-80 h-auto rounded-tr-[10px] rounded-tl-[10px]">
+            <div class="my-4 mx-4 h-6 w-32 bg-[#020E63] rounded-xl items-center justify-center">
+            <p class="font-regular text-[14px] text-center text-white ">VR & Metaverse</p>
+          </div>
+          
+          <h1 class="mx-4 font-bold text-xl ">Virtual Reality Impact (VR)</h1>
+          <p class="text-[12px] font-medium opacity-70 w-72 mx-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+
+          <div class="mx-4 flex-row flex items-center justify-start">
+            <img src="./assets/pfp.png" class="w-12">
+            <div class="pl-3">
+          <h4 class="font-medium text-sm">Jack Williamson</h4>
+          <p class="text-[12px] font-regular">CEO of Stech</p>
+        </div>
+          </div>            
+          </div>
+
+
+
+        </div>
 
         </section>
 
