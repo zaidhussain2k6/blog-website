@@ -7,7 +7,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap" rel="stylesheet">
-      
+    <script>
+      module.exports = {
+        screens: {
+          // Extra small screens (<576px)
+          xs: '576px',
+  
+          // Small screens (≥576px)
+          sm: '768px',
+  
+          // Medium screens (≥768px)
+          md: '992px',
+  
+          // Large screens (≥1200px)
+          lg: '1200px',
+  
+          // Extra large screens (≥1440px)
+          xl: '1440px',
+        },
+      };
+    </script>
     <style>
       * {
     box-sizing: border-box;
@@ -28,7 +47,7 @@
             <img src="assets/logo.svg" alt="">
             </div>
 
-            <div class="flex space-x-6 text-white font-lato font-medium">
+            <div class="flex space-x-6 text-white font-lato font-medium xs:hidden">
                 <a href="#" class="">Home</a>
                 <a href="#" class="">Articles</a>
                 <a href="#" class="">News</a>
